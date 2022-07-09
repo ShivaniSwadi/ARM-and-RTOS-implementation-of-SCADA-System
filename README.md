@@ -33,3 +33,17 @@ We implemented 3 function
 ### Problem with this System
 * Here we assume that when are system is monitoring either speed or temperature then other system is in the safe operating zone.
 * But in real time it is required that we have to simultaneously monitor both  speed and temperature.
+
+## RTOS Implenmentation
+Kernel used RTX (Real Time Execution)
+In order to overcome drawbacks of ARM implementation we switched to the real time operating system.
+Here we use CPU scheduling algorithms to solve the problem. The Round Robin algorithm with preemptive priority based scheduling is used.
+Kernel objects used are Tasks.
+
+### Construction
+- Hardware utilisation remains the same as in ARM implementation.
+- Here Tasks are created instead of functions as in ARM implementation.
+
+* Speed_Monitor_task
+*Temperature_monitor_task
+* Shutdown_task
