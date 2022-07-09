@@ -41,9 +41,9 @@ Here we use CPU scheduling algorithms to solve the problem. The Round Robin algo
 Kernel objects used are Tasks.
 
 ### Construction
-- Hardware utilisation remains the same as in ARM implementation.
-- Here Tasks are created instead of functions as in ARM implementation.
+Hardware utilisation remains the same as in ARM implementation.
+Here Tasks are created instead of functions as in ARM implementation.
 
 * Speed_Monitor_task
-*Temperature_monitor_task
+* Temperature_monitor_task
 * Shutdown_task
