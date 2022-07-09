@@ -48,8 +48,8 @@ Here Tasks are created instead of functions as in ARM implementation.
 * Temperature_monitor_task
 * Shutdown_task
 
-###Working
-* First the tasks_1 is created with some priority. this task is to monitor the temperature of the comburtion chamber as we give inputs through the ADC knob.
+### Working
+* First the Task_1 is created with some priority. this task is to monitor the temperature of the comburtion chamber as we give inputs through the ADC knob.
 * This task checks whether the temperature is greater the the thrushold temperature.
 * If yes then creates Task_3 with priority higher than Task_1, i.e, to perform the gradual shutdown of system.
 * If no then creates Task_2 with its priority higher than Task_1, i.e., to monitor the speed of the turbine.
